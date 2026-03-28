@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 8100;
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1487432341419724970/z4MJNN5M__R00XjcLpTlmqHr5R-JZhfEbKlUeCbfQbxIEoaeOcBXWbVsWCZcy6cLvGC8" ;
+const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 app.use(cors());
 app.use(express.json());
 
